@@ -1,6 +1,8 @@
 package idiots.mini_project.service;
 
+import idiots.mini_project.model.Admin;
 import idiots.mini_project.model.User;
+import idiots.mini_project.repository.AdminRepository;
 import idiots.mini_project.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,12 +12,10 @@ import org.springframework.transaction.annotation.Transactional;
 public class AdminService {
 
     @Autowired
-    private UserRepository userRepository;
+    private AdminRepository adminRepository;
 
     @Transactional(readOnly = true)
-    public User login(User user) {
-        return userRepository.findByApartnameAndBuildingAndUnit(
-                user.getApartname(), user.getBuilding(), user.getUnit()
-        );
+    public Admin login(Admin admin) {
+        return adminRepository.findByFirestationnameAndFirestationpassword(admin.getFirestationname(), admin.getFirestationpassword());
     }
 }

@@ -13,7 +13,7 @@ public class UserService {
     private UserRepository userRepository;
 
     @Transactional
-    public void login(User user) {
+    public void join(User user) {
         userRepository.save(user);
     }
 }

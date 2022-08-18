@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    background-color: red;
+    color:white;
+    border-bottom: 1px solid gray;
+    margin-bottom:20px ;
+}
+#join{
+    width: 60%;
+    background-color: aliceblue;
+    margin:auto;
+    border: 1px solid gainsboro;
+
+
+}
+#join div{
+    width:100%;
+    text-align: center;
+    padding: 3%;
+
+}
+#submit{
+    font-size: larger;
+    margin:auto;
+    background-color: rgb(255, 0, 0);
+    color:white;
+}
+#submit:hover{
+    filter:opacity(0.5);
+}
+footer div{
+
+    height: 150px;
+    padding:30px;
+    text-align: center;
+}

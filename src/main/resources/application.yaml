@@ -10,8 +10,8 @@ server:
 spring:
   mvc:
     view:
-      prefix: #/WEB-INF/views/
-      suffix: #.html #.jsp
+      prefix: /webapp/WEB-INF/views/
+      suffix: .jsp
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -36,3 +36,4 @@ spring:
   jackson:
     serialization:
       fail-on-empty-beans: false
+
