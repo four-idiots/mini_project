@@ -10,12 +10,12 @@ server:
 spring:
   mvc:
     view:
-      prefix: /webapp/WEB-INF/views/
+      prefix: /WEB-INF/views/
       suffix: .jsp
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/fire?serverTimezone=Asia/Seoul
     username: four_idiots
     password: 1234
 

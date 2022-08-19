@@ -23,13 +23,13 @@ public class User {
     private String apartname;
 
     @Column(nullable = false, length = 30)
-    private int building; // 동
+    private String building; // 동
 
     @Column(nullable = false, length = 30)
-    private int unit; // 호
+    private String unit; // 호
 
-    @Column(nullable = false, length = 15)
-    private String phonenumber;
+//    @Column(nullable = false, length = 15)
+//    private String phonenumber;
 
     @Enumerated(EnumType.STRING)
     private Role role;
