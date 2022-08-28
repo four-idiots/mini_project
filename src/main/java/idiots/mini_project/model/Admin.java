@@ -28,5 +28,8 @@ public class Admin {
     @Column(nullable = false, length = 30)
     private String firestationpassword;
 
+    @ManyToOne
+    @JoinColumn(name="apartname")
+    private User user;
 
 }

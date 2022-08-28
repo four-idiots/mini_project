@@ -20,7 +20,7 @@ public class UserApiController {
     private UserService userService;
 
 
-    @PostMapping("/api/user")
+    @PostMapping("/api/user") //JSON 언어를 받아온다.
     public ResponseDto<Integer> join(@RequestBody User user) {
         user.setRole(Role.USER);
         userService.join(user);
