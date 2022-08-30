@@ -21,7 +21,7 @@
   <body>
     <header id="top-menu" style="height: 10%"></header>
 
-    <article style="height: 70%">
+    <article id="join" style="height: 70%">
       <h2>서비스 등록하기</h2>
       <form>
         <div>
@@ -57,18 +57,11 @@
 
         <div id="fires">
           <i class="icon-handshake-o"></i>
-          
 
           <b>정보 공유 소방서 등록</b><br />
-          <b id="a"> </b>
-          <input type="text" id="b" value="">
+          <b id="info"></b>
+          <input type="text" id="nearest_station" name="station" value="" />
         </div>
-
-        <script>
-          var mins = position();
-          // var inputValue = document.getElementById("b").value;
-          console.log(mins);
-        </script>
 
         <div>
           <input id="btn-save" type="submit" value="Register" />
@@ -81,6 +74,7 @@
     <script>
       fetchfunc("head", "#top-menu");
       fetchfunc("foot", "footer");
+      
     </script>
   </body>
 </html>
