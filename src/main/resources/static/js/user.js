@@ -3,14 +3,54 @@ let index = {
 			$("#btn-save").on("click", ()=>{ // function(){} , ()=>{} this를 바인딩하기 위해서!!
 				this.save();
 			});
+<<<<<<< HEAD
 		},
 
+=======
+			$("#btn-fire").on("click", ()=>{ // function(){} , ()=>{} this를 바인딩하기 위해서!!
+            	this.fire();
+            });
+			$("#btn-login").on("click", ()=>{ // function(){} , ()=>{} this를 바인딩하기 위해서!!
+            	this.login();
+            });
+		},
+
+        fire: function(){
+
+        			let data = {
+        					name: $("#name").val(),
+        					password: $("#password").val(),
+        			};
+
+        			$.ajax({
+        				type: "POST",
+        				url: "/fire/api/admin",
+        				data: JSON.stringify(data), // http body데이터
+        				contentType: "application/json; charset=utf-8",// body데이터가 어떤 타입인지(MIME)
+        				dataType: "json" // 요청을 서버로해서 응답이 왔을 때 기본적으로 모든 것이 문자열 (생긴게 json이라면) => javascript오브젝트로 변경
+        			}).done(function(resp){
+        			    location.href = "/fire";
+        				alert("소방서 회원가입이 완료되었습니다.");
+        				//console.log(resp);
+
+        			}).fail(function(error){
+        				alert(JSON.stringify(error));
+        			});
+
+        		},
+
+
+>>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
 		save: function(){
 			//alert('user의 save함수 호출됨');
 			let data = {
 					apartname: $("#apartname").val(),
 					building: $("#building").val(),
 					unit: $("#unit").val()
+<<<<<<< HEAD
+=======
+					// nearest_station: $("#nearest_station").val()
+>>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
 			};
 
 			//console.log(data);
@@ -34,6 +74,7 @@ let index = {
 
 		},
 
+<<<<<<< HEAD
 		login: function(){
         			//alert('user의 save함수 호출됨');
         			let data = {
@@ -54,5 +95,27 @@ let index = {
         				alert(JSON.stringify(error));
         			});
         		}
+=======
+		login: function() {
+        	//alert('user의 save함수 호출됨');
+        	let login = {
+        			name: $("#name").val(),
+         			password: $("#password").val()
+        	};
+        $.ajax({
+        		type: "POST",
+        		url: "/fire/api/admin/login",
+        		data: JSON.stringify(login), // http body데이터
+        		contentType: "application/json; charset=utf-8",// body데이터가 어떤 타입인지(MIME)
+        		dataType: "json" // 요청을 서버로해서 응답이 왔을 때 기본적으로 모든 것이 문자열 (생긴게 json이라면) => javascript오브젝트로 변경
+        	}).done(function(resp){
+        		alert("로그인이 완료되었습니다.");
+        		console.log(resp);
+        		location.href = "/fire";
+        	}).fail(function(error){
+        		alert(JSON.stringify(error));
+        	});
+        }
+>>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
 }
 index.init();
