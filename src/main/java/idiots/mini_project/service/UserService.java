@@ -9,15 +9,12 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class UserService {
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
     @Autowired
     private UserRepository userRepository;
 
     @Transactional
     public void join(User user) {
+
         userRepository.save(user);
     }
 }
