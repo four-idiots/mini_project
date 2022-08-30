@@ -10,12 +10,9 @@ server:
 spring:
   mvc:
     view:
-      prefix: /WEB-INF/views/
-<<<<<<< HEAD
-      suffix: .html
-=======
-      suffix: .jsp
->>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
+      prefix:
+      suffix:
+
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -26,11 +23,8 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-<<<<<<< HEAD
-      ddl-auto: update
-=======
       ddl-auto: create
->>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
+
       # none, create = 실행마다 테이블을 새로만들겠다, update = 기존 테이블에 추가
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

@@ -11,15 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class AdminService {
 
-<<<<<<< HEAD
-    @Autowired
-    private AdminRepository adminRepository;
-
-    @Transactional(readOnly = true)
-    public Admin login(Admin admin) {
-        return adminRepository.findByFirestationnameAndFirestationpassword(admin.getFirestationname(), admin.getFirestationpassword());
-    }
-=======
 
     @Autowired
     private AdminRepository adminRepository;
@@ -31,9 +22,7 @@ public class AdminService {
 
     @Transactional
     public Admin login(Admin admin) {
-        return adminRepository.findByNameAndPassword(admin.getName(), admin.getPassword());
+        return adminRepository.findByFirestationnameAndFirestationpassword(admin.getFirestationname(), admin.getFirestationpassword());
     }
 
-
->>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
 }
