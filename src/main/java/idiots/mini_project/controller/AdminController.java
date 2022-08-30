@@ -15,11 +15,12 @@ public class AdminController {
         return "index.html";
     }
 
-    @GetMapping("/user/loginForm")
-    public String loginForm() {
+//    @GetMapping("/user/loginForm")
+//    public String loginForm() {
+//        return "login";
+//    }
 
-        return "login";
-    }
+
 
     /*
     @GetMapping("/user/firestationjoinForm")

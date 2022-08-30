@@ -29,13 +29,11 @@ public class User {
     @Column(nullable = false, length = 30)
     private String unit; // 호
 
-//    @Column(nullable = false, length = 15)
-//    private String phonenumber;
+    @Column(nullable = false, length = 15)
+    private String phonenumber;
 
-
-//    @Column(nullable = false, length = 30)
-//    private String neareststation;
-
+    @Column(nullable = false, length = 30)
+    private String nearest_station;
 
     @Enumerated(EnumType.STRING)
     private Role role;
