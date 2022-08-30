@@ -50,6 +50,10 @@ ul #home:hover, ul .menu:hover{
     margin:auto;
     border: 1px solid gainsboro;
 }
+#join h1{
+    text-align: center;
+    padding-top: 100px;
+}
 #join h2{
     text-align: center;
 }
