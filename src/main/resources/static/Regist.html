@@ -26,6 +26,18 @@
       <form>
         <div>
           <i class="icon-building-filled"></i>
+          <b>연락처</b><br />
+
+          <input
+            type="tel"
+            id="telephone"
+            pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+            placeholder="010-1234-5678"
+            style="width: 280px"
+          />
+        </div>
+        <div>
+          <i class="icon-building-filled"></i>
           <b>아파트 이름</b><br />
 
           <input
@@ -60,7 +72,13 @@
 
           <b>정보 공유 소방서 등록</b><br />
           <b id="info"></b>
-          <input type="text" id="nearest_station" name="station" value="" />
+          <input
+            type="text"
+            hidden
+            id="nearest_station"
+            name="station"
+            value=""
+          />
         </div>
 
         <div>
@@ -74,7 +92,6 @@
     <script>
       fetchfunc("head", "#top-menu");
       fetchfunc("foot", "footer");
-      
     </script>
     <script src="js/user.js"></script>
   </body>
