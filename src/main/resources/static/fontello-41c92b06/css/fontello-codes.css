@@ -1,0 +1,9 @@
+
+.icon-key:before { content: '\e800'; } /* '' */
+.icon-user:before { content: '\e801'; } /* '' */
+.icon-home:before { content: '\e802'; } /* '' */
+.icon-commerical-building:before { content: '\e811'; } /* '' */
+.icon-building-filled:before { content: '\f1ad'; } /* '' */
+.icon-user-plus:before { content: '\f234'; } /* '' */
+.icon-handshake-o:before { content: '\f2b5'; } /* '' */
+.icon-address-card:before { content: '\f2bb'; } /* '' */

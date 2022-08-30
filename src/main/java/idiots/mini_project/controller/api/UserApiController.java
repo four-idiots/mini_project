@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserApiController {
 
     @Autowired
+<<<<<<< HEAD
+    private AdminService adminService;
+    @Autowired
+=======
+>>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
     private UserService userService;
 
 

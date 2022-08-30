@@ -11,6 +11,18 @@
             <form>
                 <div>
                   <i class="icon-user"></i>
+<<<<<<< HEAD
+                  <input  id="firestationame" type="text" placeholder="아이디"/>
+                </div>
+                <div>
+                  <i class="icon-key"></i>
+                  <input  id="firestationpassword" type="password" placeholder="비밀번호"/>
+                </div>
+            </form>
+            <div><a href="#"><i class="icon-user-plus"></i>회원가입</a></div>
+ </article>
+
+=======
                   <input  name="name" type="text" placeholder="아이디"/>
                 </div>
                 <div>
@@ -26,5 +38,6 @@
  </article>
 
 
+>>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
 <script src="../js/user.js"></script>
 <%@ include file="../layout/footer.jsp"%>
