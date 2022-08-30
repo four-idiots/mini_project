@@ -9,7 +9,7 @@
       >
     </li>
     <li>
-      <a href="Login.html" class="menu"><b>관리자 로그인</b></a>
+      <a onclick='fetchfunc("login","article")' class="menu"><b>관리자 로그인</b></a>
     </li>
     <li>
       <a class="menu" href="Regist.html" ><b>등록하기</b></a>
