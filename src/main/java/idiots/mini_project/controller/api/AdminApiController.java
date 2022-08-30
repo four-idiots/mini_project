@@ -30,6 +30,7 @@ public class AdminApiController {
 
     @PostMapping("/api/admin/login")
     public ResponseDto<Integer> 로그인(@RequestBody Admin admin, HttpSession session) {
+
         System.out.println("AdminApiController : login 호출됨");
         Admin principal = adminService.login(admin);
         System.out.println(principal);

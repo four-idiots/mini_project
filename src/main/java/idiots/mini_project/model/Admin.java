@@ -23,14 +23,13 @@ public class Admin {
     private Role role;
 
     @Column(nullable = false, length = 30)
-
     private String firestationname;
 
     @Column(nullable = false, length = 30)
     private String firestationpassword;
 
-//    @ManyToOne
-//    @JoinColumn(name="apartname")
-//    private User user;
+    @ManyToOne
+    @JoinColumn(name="nearest_station")
+    private User user;
 
 }

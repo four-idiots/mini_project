@@ -23,32 +23,25 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
     <c:choose>
-<<<<<<< HEAD
         <c:when test="${empty sessionScope.principal}">
-=======
         <c:when test="${empty sessionScope}">
->>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
             <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" href="/fire/user/loginForm">로그인</a>
                   </li>
-<<<<<<< HEAD
                   <li class="nav-item">
                     <a class="nav-link" href="/fire/user/joinForm">회원가입</a>
-=======
                    <li class="nav-item">
                      <a class="nav-link" href="/fire/user/firestationjoinForm">소방서 회원가입</a>
                     </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/fire/user/joinForm">사용자 회원가입</a>
->>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
                   </li>
                 </ul>
         </c:when>
         <c:otherwise>
             <ul class="navbar-nav">
                   <li class="nav-item">
-<<<<<<< HEAD
                     <a class="nav-link" href="/fire/board/writeForm">글쓰기</a>
                   </li>
                   <li class="nav-item">
@@ -56,7 +49,6 @@
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="/fire/user/logout">로그아웃</a>
-=======
                     <a class="nav-link" href="/fire/admin/writeForm">글쓰기</a>
                   </li>
                   <li class="nav-item">
@@ -64,7 +56,6 @@
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="/fire/admin/logout">로그아웃</a>
->>>>>>> 1baac522ebbb4d809a79c8f94caf645b5bb9748f
                   </li>
                 </ul>
         </c:otherwise>
